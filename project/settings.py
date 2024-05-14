@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dp#8pifyp(xjre88b0#ubfeo)7k0k==bb((n$#pftva2e%p*%-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 CORS_ALLOW_HEADERS = ["*"]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*",'portfolio-env.eba-7n8j7qdb.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
