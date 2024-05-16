@@ -8,10 +8,12 @@ $(document).ready(function () {
 				scrollTop: scrollPoint
 			}, 500);
 		}) */
-
+		
+		preLoader();
 		window.onscroll = function () {
 		onScrollHandle()
 	};
+	
 
 	function onScrollHandle() {
 		//Navbar shrink when scroll down
@@ -49,15 +51,6 @@ $(document).ready(function () {
 				curLink.parent().removeClass("active");
 			}
 		});
-	}
+	};
+	
 });
-
-
-function preLoader() {
-	setTimeout(function () {
-		$('.preloader').addClass('complete')
-	}, 1000);
-}
-
-
-

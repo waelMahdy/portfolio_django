@@ -274,4 +274,57 @@ jQuery(document).ready(function($){
 		//check if mobile or desktop device
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
+	$('#sendForm').submit(function (event) {
+		event.preventDefault();
+		// create an AJAX call
+		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+		var name=$('input[name="name"]').val();
+		$.ajax({
+			type:'POST',
+			data: $(this).serialize(), // get the form data
+			url: "{% url 'contact_form'  %}",
+			headers: { 'X-CSRFToken': csrfToken },
+			// on success
+			success: function (response) {
+				if (response.success == true) {
+					
+					swal({
+						title: "Good job!",
+						text: name+ " added to cart!",
+						icon: "success",
+						button: "Ok !",
+					  });
+					  
+					 
+					  $('text-success').text('Message sent, Thank you '+name);
+					  
+					  
+		
+				}
+				else {
+					swal({
+						title: "Good job!",
+						text:" Something went wrong, try again later!",
+						icon: "error",
+						button: "Ok !",
+					  });
+				}
+			},
+			// on error
+			error: function (response) {
+				// alert the error if any error occured
+				console.log(response);
+			  
+					swal({
+						title: "Good job!",
+						text:" Something went wrong, try again later!",
+						icon: "error",
+						button: "Ok !",
+					  });
+				
+			}
+		});
+		return false;
+	});
+
 });

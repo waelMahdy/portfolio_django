@@ -50,15 +50,15 @@
     <link href="{% static 'style/style-timline.css' %}" rel="stylesheet">
     <link rel="{% static 'stylesheet" href="style/reset.min.css' %}" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!-- <link rel="stylesheet" crossorigin="anonymous" href="http://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL3d3dy53YWVsbWFoZHkuY29tLw"><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-MW5Q2ETXK8&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-158351236-1"></script> -->
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6645cd8680d7c0001914e646&product=inline-share-buttons' async='async'></script> 
+    <script src="{% static 'js/btn.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script> 
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -68,16 +68,12 @@
     </script>
     <script src="{% static 'js/wow.min.js' %}"></script>
 
-    <script src="{% static 'js/btn.js' %}"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+   
 
 </head>
     <body>
-
-
-
-       <!-- <div class="preloader">
-        </div>   -->
+       <div class="preloader">
+        </div>  
         <section id="home">
             <p id="homeDiv"></p>
             <div class="header">
@@ -188,8 +184,7 @@
                                         </a>
                                     </b>
                                     and looking for a Junior Developer role.<br /><br />
-                                    In <b>2023</b> I am looking to complete all my exams of the course and also evolve in my
-                                    first role as a developer.
+                                    In<b> 2023</b> completed MICROSOFT SOFTWARE ENGINEER – PYTHON bootcamp with FIREBRAND.  
                                 </p>
                                 <div id="CV">
                                     <a href="{% static 'images/CV.pdf' %}" target="_blank">
@@ -224,12 +219,26 @@
                             <div class="timeline">
                                 <div class="timeline-content">
                                     <div class="timeline-year">
-                                        <span>2020</span>
+                                        <span>2024</span>
                                     </div>
                                     <div class="timeline-icon wow swing" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1000">
                                         <img src="{% static 'images/web-developer.jpg' %}" />
                                     </div>
-                                    <h3 class="title">Web Development Course with Just IT</h3>
+                                    <h3 class="title">Microsoft Software Engineer – Python</h3>
+                                    <p class="description">
+                                        A bootcamp with <a href='https://firebrand.training/uk' target="_blank" style='color: #898989;'><i>FIREBRAND</i></a> where I succssfully obtained :<br>  * Microsoft: Azure Fundamentals AZ-900, <br>* Developing Solutions for Microsoft Azure-AZ-204 and<br> * Associate Pearson IT Specialist- Python Fundamentals ITS-303<br> certificates.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-year">
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="timeline-icon wow swing" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1000">
+                                        <img src="{% static 'images/coding.jpg' %}" />
+                                    </div>
+                                    <h3 class="title">Web Development Course with <a href='https://www.justit.co.uk/' target="_blank" style='color: #898989;'><i>Just IT</i></a></h3>
                                     <p class="description">
                                         Having a passion for coding and learning new technologies, in general, drove me chose coding as a career when I moved to the UK in 2019, I've embarked upon this self-funded course to develop my coding skills.
                                         I've already become comfortable with a number of languages and frameworks
@@ -259,7 +268,7 @@
                                         <img src="{% static 'images/MilitaryPic.png' %}" />
                                     </div>
                                     <h3 class="title">Army Service</h3>
-                                    <p class="description">
+                                    <p class="description pl-4">
                                         Completed my 3 years mandatory army attendance in the Egyptian Army as an officer
                                     </p>
                                 </div>
@@ -288,7 +297,7 @@
                                         <img src="{% static 'images/baby-1.jpg' %}" />
                                     </div>
                                     <h3 class="title">Born</h3>
-                                    <p class="description">
+                                    <p class="description ml-3">
                                         I was born in September 1978 Cairo, Egypt.
                                     </p>
                                 </div>
@@ -355,8 +364,6 @@
                             <div class="skill-desc"></div>
                         </div>
         
-        
-        
                         <div class="skill-box wow bounceInLeft">
                             <div class="skill-icon">
                                 <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
@@ -398,8 +405,51 @@
                             </div>
                             <div class="skill-title">Bootstrap </div>
                             <div class="skill-desc"></div>
-                        </div>
-        
+                        </div>  
+                        <div class="skill-box wow bounceInLeft">
+                            <div class="skill-icon">
+                                <a href="https://en.wikipedia.org/wiki/Microsoft_Azure" target="_blank">
+                                    <i>
+                                        <img src="{% static 'images/microsoft-azure.jpg' %}" height="80%" />
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="skill-title">Azure</div>
+                            <div class="skill-desc"></div>
+                        </div>  
+                        <div class="skill-box wow zoomIn">
+                            <div class="skill-icon">
+                                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+                                    <i>
+                                        <img src="{% static 'images/python.jpg' %}"
+                                             width="80%" height="80%" />
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="skill-title">Python</div>
+                            <div class="skill-desc"></div>
+                        </div>   
+                        <div class="skill-box wow zoomIn">
+                            <div class="skill-icon">
+                                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank">
+                                    <i>
+                                        <img src="{% static 'images/django.jpg' %}"
+                                             width="80%" height="80%" />
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="skill-title">Django</div>
+                            <div class="skill-desc"></div>
+                        </div> 
+                        <div class="skill-box wow bounceInRight">
+                            <div class="skill-icon">
+                                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">
+                                    <i><img src="{% static 'images/postgres.jpg' %}" width="80%" height="80%" /></i>
+                                </a>
+                            </div>
+                            <div class="skill-title">PostgreSQL </div>
+                            <div class="skill-desc"></div>
+                        </div> 
         
                     </div>
                 </div>
@@ -734,24 +784,24 @@
                 <div class="row text-center">
                     <div class="col-md-8">
         
-                        <form  class="contact-form">
-                       
+                        <form id="sendForm"  class="contact-form" method='POST'>
+                         {% csrf_token %}
                             <div class="row">
                                 <div class="col-xl-6">
-                                    <input type="text"  placeholder="name" required/>
+                                    <input type="text" name="name"  placeholder="name" required/>
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="text"  placeholder="email" required />
+                                    <input type="email" name="email"  placeholder="email" required />
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="text" placeholder="subject"  required/>
+                                    <input type="text" name="subject" placeholder="subject"  required/>
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="text" placeholder="telephone"  required/>
+                                    <input type="text" name="tel" placeholder="telephone"  required/>
                                 </div>
                                 <div class="col-xl-12">
                                     <p class="sub">Drop Your Message Here.</p>
-                                    <textarea id="summary-ckeditor" placeholder="Message"  cols="30" rows="10" required></textarea>                             
+                                    <textarea id="summary-ckeditor" name="message" placeholder="Message"  cols="30" rows="10" required></textarea>                             
                                         <input type="submit" value="send message" id="sub" />
                                     </div>
                                 </div>
@@ -794,11 +844,102 @@
         </section>
             <!-- end section contact -->
             <!-- start section footer -->
-            <footer>
-                <p><a style="color:#0a93a6; text-decoration:none;" href="#"> Wael Mahdy</a> © 2024.</p>
-            </footer>
+            
+        <footer>
+                <p><a style="color:#0a93a6; text-decoration:none;" href="#"> Wael Mahdy</a> © {% now 'Y' %}.</p>
+        </footer>
             <!-- end section footer -->
+        <!-- ShareThis BEGIN -->
+        <div class="sharethis-inline-share-buttons">
+
+        </div>
+        {% comment %} <div class="sop"></div> {% endcomment %}
+       
+        <!-- ShareThis END -->
+     <script>
+     
+        $(document).ready(function () {
+            // catch the form's submit event
+            $('#sendForm').submit(function (event) {
+                event.preventDefault();
+                // create an AJAX call
+                var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+                var name=$('input[name="name"]').val();
+                $.ajax({
+                    type:'POST',
+                    data: {
+                        name:name,
+                        tel:$('input[name="tel"]').val(),
+                        message:$("textarea[name='message']").val(),
+                        subject:$('input[name="subject"]').val(),
+                        email:$('input[name="email"]').val(),
+                        csrfmiddlewaretoken: csrfToken}, // get the form data
+                    url: "{% url 'contact_form'  %}",
+                    //headers: { 'X-CSRFToken': csrfToken },
+                    // on success
+                    success: function (response) {
+                        if (response.success == true) {
+                            
+                            swal({
+                                title: "Message sent!",
+                                text: 'Thank you '+name+ ", I will get back to you ASAP.",
+                                icon: "success",
+                                button: "Ok !",
+                              });
+                              $('.text-success').text('Message sent, Thank you '+name);
+                              $('input[type="text"],textarea,input[type="email"]').val('');         
+                
+                        }
+                        else {
+                            swal({
+                                title: "Good job!",
+                                text:" Something went wrong, try again later!",
+                                icon: "error",
+                                button: "Ok !",
+                              });
+                              console.log(response.error);
+                              $('.text-success').text('Message not sent, Thank you '+name);
+                        }
+                    },
+                    // on error
+                    error: function (response) {
+                        // alert the error if any error occured
+                        console.log(response);
+                      
+                            swal({
+                                title: "Good job!",
+                                text:" Something went wrong, try again later !!!",
+                                icon: "error",
+                                button: "Ok !",
+                              });
+                        
+                    }
+                });
+                return false;
+            });
+            
         
+           
+        })
+
+     </script> 
+ 
+     <script>
+        $(window).on('load',function(){
+            preLoader();
+        })
+        
+        function preLoader() {
+            setTimeout(function () {
+                $('.preloader').addClass('complete')
+            }, 1000);
+        }	;
+                
+        
+    </script>
+    <script>
+        new WOW().init();
+    </script>
     </body>
 </html>
 

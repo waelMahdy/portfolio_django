@@ -22,4 +22,5 @@ from project import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('contact_form', views.contact_form, name='contact_form'),
 ]
