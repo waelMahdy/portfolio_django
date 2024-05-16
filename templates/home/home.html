@@ -843,8 +843,7 @@
         
         </section>
             <!-- end section contact -->
-            <!-- start section footer -->
-            
+            <!-- start section footer -->           
         <footer>
                 <p><a style="color:#0a93a6; text-decoration:none;" href="#"> Wael Mahdy</a> © {% now 'Y' %}.</p>
         </footer>
@@ -853,7 +852,7 @@
         <div class="sharethis-inline-share-buttons">
 
         </div>
-        {% comment %} <div class="sop"></div> {% endcomment %}
+ 
        
         <!-- ShareThis END -->
      <script>
@@ -878,7 +877,7 @@
                     //headers: { 'X-CSRFToken': csrfToken },
                     // on success
                     success: function (response) {
-                        if (response.success == true) {
+                       
                             
                             swal({
                                 title: "Message sent!",
@@ -889,17 +888,7 @@
                               $('.text-success').text('Message sent, Thank you '+name);
                               $('input[type="text"],textarea,input[type="email"]').val('');         
                 
-                        }
-                        else {
-                            swal({
-                                title: "Good job!",
-                                text:" Something went wrong, try again later!",
-                                icon: "error",
-                                button: "Ok !",
-                              });
-                              console.log(response.error);
-                              $('.text-success').text('Message not sent, Thank you '+name);
-                        }
+                        
                     },
                     // on error
                     error: function (response) {
