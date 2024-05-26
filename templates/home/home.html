@@ -124,8 +124,7 @@
                     </div>
                 </div>
                 <div class="cartIcon">
-                    <a href="#"><img id="logo" src="{% static 'images/horuseye1.jpg' %}" /></a>
-        
+                    <a href="#"><img id="logo" src="{% static 'images/horuseye1.jpg' %}" /></a>   
                 </div>
         
         
@@ -465,15 +464,15 @@
                 <p class="sub"><i>Click on the images below for more details</i></p>
                 <div class="projectscontainer">
         
-                    {% comment %} <div class="projct wow zoomIn">
-                        <a href="#projects" data-toggle="modal" data-target="#blackHatModal">
-                            <img src="{% static 'images/blachHatStore.jpg' %}" width="90%" height="90%">
+                   <div class="projct wow zoomIn">
+                        <a href="#projects" data-toggle="modal" data-target="#swaan">
+                            <img src="{% static 'images/swaan.png' %}" width="90%" height="90%">
                         </a>
                         <div class="inbox">
-                            <p>Black Hat Online Store</p>
+                            <p>Swaan Online Store</p>
                         </div>
         
-                    </div> {% endcomment %}
+                    </div> 
                     <div class="projct wow zoomIn">
                         <a href="#projects" data-toggle="modal" data-target="#weatherAppModal">
                             <img src="{% static 'images/weatherApp-1.jpg' %}" width="90%" height="90%">
@@ -500,60 +499,47 @@
                             <p>Units Converter</p>
                         </div>
         
-                    </div>
-                    {% comment %} <div class="projct wow zoomIn">
-                        <a href="#projects" data-toggle="modal" data-target="#muppetshowModal">
-                            <img src="{% static 'images/muppets.jpg' %}" width="90%" height="90%">
-                        </a>
-                        <div class="inbox">
-                            <p>The Muppet Show</p>
-                        </div>
-        
-                    </div> {% endcomment %}
-        
-        
+                    </div>       
                 </div>
             </div>
             <!-- projects modals -->
-            <div class="modal fade bd-example-modal-lg" id="weatherAppModal" tabindex="-1" role="dialog"
+            <div class="modal fade bd-example-modal-lg" id="swaan" tabindex="-1" role="dialog"
                  aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content projectModal">
         
                         <div class="container" style="margin:2rem;">
-                            <h1 style="margin:2rem;">Weather Application</h1><br />
-                            <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal"
-                                 data-target="#weatherAppModal">
+                            <h1 style="margin:2rem;">Swaan online store</h1><br />
+                            <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal" data-target="#swaan">
                             <div class="row modalRow">
                                 <div class="col-lg-8">
                                     <div class="modalScreenshotDiv salaryCalcScreen">
-                                        <img src="{% static 'images/weatherApp-1.jpg' %}" width="100%" />
+                                        <img src="{% static 'images/swaan.png' %}" width="100%" />
                                     </div>
                                     <h2 style="margin-top:2rem;">Project Summary</h2>
-                                    <p>
-                                        The aim of this project was to create a weather website focused on getting the
-                                        weather data by device's location or search by city name by using JavaScript and
-                                        APIs.<br><br>based on my experience with weather applications, I found them very
-                                        useful especially before you go out or planning a trip. Also, it is a responsive
-                                        website.
-                                        I always have this question about how they do it so quickly and accurately! This was
-                                        my inspiration to build this website.
+                                    <p>The aim of this project was to create a fully functioning commercial website by using Python,Django framework.<br>
+                                        In this website I developed a fully functioning website with search, cart, and filters functions.<br>
+                                        Also, I implemented payment gateway by using PayPal sandbox, a complete log in system with authentication process plus sign in with google which I used a google API with it and it is also responsive website.
+                                        Please have a look at the signin and payement process I mades sure pricess are so low.<br>
+                                        If you have any questions please contact me via the contact form it's connected to my email address.  
                                     </p>
                                 </div>
                                 <div class="col-lg-4">
                                     <h3 class="modalDateLabel">Date created</h3>
-                                    <h4 class="modalDate">Septemper 2019</h4>
+                                    <h4 class="modalDate">June 2024</h4>
                                     <h3 class="modalLanguageLabel">Skills used</h3>
                                     <i><img class="langUsed" src="{% static 'images/html-5-480.png' %}" height="30px" title="HTML5"></i>
                                     <img class="langUsed" src="{% static 'images/css3-480.png' %}" height="30px" title="CSS3">
                                     <img class="langUsed" src="{% static 'images/javascript-480.png' %}" height="35px" title="JavaScript">
                                     <img class="langUsed" src="{% static 'images/jquery.png' %}" height="25px" title="jQuery">
                                     <img class="langUsed" src="{% static 'images/bootstraplogo.png' %}" height="30px" title="Bootstrap">
+                                    <img class="langUsed" src="{% static 'images/python.jpg' %}" height="30px" title="Python">
+                                    <img class="langUsed" src="{% static 'images/django.jpg' %}" height="30px" title="Django">
+                                    <img class="langUsed" src="{% static 'images/postgres.jpg' %}" height="30px" title="PostgreSQL">
                                     <br /><br />
         
-                                    <a href="https://weathercondition.netlify.app/" target="_blank">
-                                        <button class="demoButton"
-                                                wfd-id="82">
+                                    <a href="https://waelmahdy0001.pythonanywhere.com/" target="_blank">
+                                        <button class="demoButton">
                                             LIVE DEMO
                                         </button>
                                     </a>
@@ -564,111 +550,54 @@
         
                     </div>
                 </div>
+            </div>          
+            <div class="modal fade bd-example-modal-lg" id="CurrencyConverter" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
+           <div class="modal-dialog modal-lg">
+               <div class="modal-content projectModal">
+   
+                   <div class="container" style="margin:2rem;">
+                       <h1 style="margin:2rem;">Currency Converter</h1>
+                       <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal"
+                            data-target="#CurrencyConverter">
+                       <div class="row modalRow">
+                           <div class="col-lg-8">
+                               <div class="modalScreenshotDiv salaryCalcScreen">
+                                   <img src="{% static 'images/currencies-converter-image.jpg' %}" width="90%" />
+                               </div>
+                               <h2 style="margin-top:2rem;">Project Summary</h2>
+                               <p>
+                                   The aim of this project was to create a fully functioning Currency Converter using
+                                   HTML, CSS, JavaScript and APIs. <br><br>
+                                   In this website, All the available currencies exchange rates are always updated by
+                                   using an API. Also, it is a responsive website.
+                               </p>
+                           </div>
+                           <div class="col-lg-4">
+                               <h3 class="modalDateLabel">Date created</h3>
+                               <h4 class="modalDate">December 2019</h4>
+                               <h3 class="modalLanguageLabel">Skills used</h3>
+                               <img class="langUsed" src="{% static 'images/html-5-480.png' %}" height="30px" title="HTML5">
+                               <img class="langUsed" src="{% static 'images/css3-480.png' %}" height="30px" title="CSS3">
+                               <img class="langUsed" src="{% static 'images/javascript-480.png' %}" height="35px" title="JavaScript">
+                               <img class="langUsed" src="{% static 'images/jquery.png' %}" height="25px" title="jQuery">
+                               <img class="langUsed" src="{% static 'images/bootstraplogo.png' %}" height="30px" title="Bootstrap">
+   
+                               <br /><br />
+   
+                               <a href="https://currencies-converter.netlify.app/" target="_blank">
+                                   <button class="demoButton" wfd-id="82">
+                                       LIVE DEMO
+                                   </button>
+                               </a>
+   
+                           </div>
+                       </div>
+                   </div>
+   
+               </div>
+           </div>
             </div>
-            <!-- <div class="modal fade bd-example-modal-lg" id="muppetshowModal" tabindex="-1" role="dialog"
-                 aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content projectModal">
-        
-                        <div class="container" style="margin:2rem;">
-                            <h1 style="margin:2rem;">Muppet Show Database</h1>
-                            <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal"
-                                 data-target="#muppetshowModal">
-                            <div class="row modalRow">
-                                <div class="col-lg-8">
-                                    <div class="modalScreenshotDiv salaryCalcScreen">
-                                        <img src="{% static 'images/muppets.jpg' %}" width="80%" />
-                                    </div>
-                                    <h2 style="margin-top:2rem;">Project Summary</h2>
-                                    <p>
-                                        The aim of this project was to create a database for the famous TV show muppet show,
-                                        for me it was a training of how to use ASP.NET MVC .<br><br>Using the powerful
-                                        Microsoft ASP.net MVC it was a challenge to me at first. In this project, I added
-                                        youtube videos, likes button and counter for each character using C#. Also, it is a
-                                        responsive website.
-                                    </p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <h3 class="modalDateLabel">Date created</h3>
-                                    <h4 class="modalDate">August 2019</h4>
-                                    <h3 class="modalLanguageLabel">Skills used</h3>
-                                    <img class="langUsed" src="{% static 'images/html-5-480.png' %}" height="30px" title="HTML5">
-                                    <img class="langUsed" src="{% static 'images/css3-480.png' %}" height="30px" title="CSS3">
-                                    <img class="langUsed" src="{% static 'images/javascript-480.png' %}" height="35px" title="JavaScript">
-                                    <img class="langUsed" src="{% static 'images/csharplogo.png' %}" height="30px" title="C#">
-                                    <img class="langUsed" src="{% static 'images/AspDotNet.png' %}" height="35px" title="ASP.NET MVC"><br>
-                                    <img class="langUsed" src="{% static 'images/sql-01.svg' %}" height="30px" title="SQL">
-                                    <br /><br />
-        
-                                    <a href="http://muppetshow.waelmahdy.com/" target="_blank">
-                                        <button class="demoButton"
-                                                wfd-id="82">
-                                            LIVE DEMO
-                                        </button>
-                                    </a>
-        
-                                </div>
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade bd-example-modal-lg" id="blackHatModal" tabindex="-1" role="dialog"
-                 aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content projectModal">
-        
-                        <div class="container" style="margin:2rem;">
-                            <h1 style="margin:2rem;">Black Hat Online Store</h1>
-                            <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal" data-target="#blackHatModal">
-                            <div class="row modalRow">
-                                <div class="col-lg-8">
-                                    <div class="modalScreenshotDiv salaryCalcScreen">
-                                        <img src="{% static 'images/blachHatStore.jpg' %}" width="90%" />
-                                    </div>
-                                    <h2 style="margin-top:2rem;">Project Summary</h2>
-                                    <p>
-                                        The aim of this project was to create a fully functioning commercial website by
-                                        using ASP.NET MVC5. <br><br>In this website, I built an admin protected pages with
-                                        password and email for more security so the admin can edit, delete, update or add
-                                        products or categories. also, I made sure that all the filters,login system and
-                                        search boxes are properly working. Also, it is a responsive website.<br />
-                                        Click here to enter the Admin Pages:<a href="http://www.blackhatstore.waelmahdy.com/product" target="_blank">
-                                            Click
-                                            Here
-                                        </a><br />
-                                        Admin Email: Admin@blackhat.com<br />
-                                        Admin password:Admin@2019
-        
-                                    </p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <h3 class="modalDateLabel">Date created</h3>
-                                    <h4 class="modalDate">September 2019</h4>
-                                    <h3 class="modalLanguageLabel">Skills used</h3>
-                                    <img class="langUsed" src="{% static 'images/html-5-480.png' %}" height="30px" title="HTML5">
-                                    <img class="langUsed" src="{% static 'images/css3-480.png' %}" height="30px" title="CSS3">
-                                    <img class="langUsed" src="{% static 'images/javascript-480.png' %}" height="35px" title="JavaScript">
-                                    <img class="langUsed" src="{% static 'images/csharplogo.png' %}" height="30px" title="C#">
-                                    <img class="langUsed" src="{% static 'images/AspDotNet.png' %}" height="35px" title="ASP.NET MVC"><br>
-                                    <img class="langUsed" src="{% static 'images/sql-01.svg' %}" height="30px" title="SQL">
-                                    <br /><br />
-        
-                                    <a href="http://blackhatstore.waelmahdy.com/" target="_blank">
-                                        <button class="demoButton"
-                                                wfd-id="82">
-                                            LIVE DEMO
-                                        </button>
-                                    </a>
-        
-                                </div>
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
-            </div>  -->
             <div class="modal fade bd-example-modal-lg" id="CurrencyConverter" tabindex="-1" role="dialog"
                  aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
                 <div class="modal-dialog modal-lg">
@@ -765,6 +694,55 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade bd-example-modal-lg" id="weatherAppModal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" wfd-id="14">
+           <div class="modal-dialog modal-lg">
+               <div class="modal-content projectModal">
+   
+                   <div class="container" style="margin:2rem;">
+                       <h1 style="margin:2rem;">Weather application</h1>
+                       <img src="{% static 'images/close.svg' %}" class="modalClose" data-toggle="modal"
+                            data-target="#weatherAppModal">
+                       <div class="row modalRow">
+                           <div class="col-lg-8">
+                               <div class="modalScreenshotDiv salaryCalcScreen">
+                                   <img src="{% static 'images/weatherApp-1.jpg' %}" width="90%" />
+                               </div>
+                               <h2 style="margin-top:2rem;">Project Summary</h2>
+                               <p>
+                                The aim of this project was to create a weather website focused on getting the weather data by device's location or search by city name by using JavaScript and APIs.
+
+                                based on my experience with weather applications,<br> I found them very useful especially before you go out or planning a trip. Also, it is a responsive website. I always have this question about how they do it so quickly and accurately! This was my inspiration to build this website.
+   
+   
+                               </p>
+                           </div>
+                           <div class="col-lg-4">
+                               <h3 class="modalDateLabel">Date created</h3>
+                               <h4 class="modalDate">June 2024</h4>
+                               <h3 class="modalLanguageLabel">Skills used</h3>
+                               <img class="langUsed" src="{% static 'images/html-5-480.png' %}" height="30px" title="HTML5">
+                               <img class="langUsed" src="{% static 'images/css3-480.png' %}" height="30px" title="CSS3">
+                               <img class="langUsed" src="{% static 'images/javascript-480.png' %}" height="35px" title="JavaScript">
+                               <img class="langUsed" src="{% static 'images/jquery.png' %}" height="25px" title="jQuery">
+                               <img class="langUsed" src="{% static 'images/bootstraplogo.png' %}" height="30px" title="Bootstrap">
+   
+                               <br /><br />
+   
+                               <a href="https://weathercondition.netlify.app/" target="_blank">
+                                   <button class="demoButton" wfd-id="82">
+                                       LIVE DEMO
+                                   </button>
+                               </a>
+   
+                           </div>
+                       </div>
+                   </div>
+   
+               </div>
+           </div>
+            </div>
+       </<div>
             <!-- End of projects modals-->
         </section>
         <!-- End section projects-->
