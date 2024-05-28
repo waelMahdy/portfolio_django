@@ -9,6 +9,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x:hidden;
 
 }
 
@@ -23,12 +25,15 @@ body {
 
 /* scrollbar */
 body::-webkit-scrollbar {
+    
     width: 7px;
+    background-color:#272523;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #2d2d37;
-    border-bottom: 1rem solid #222;
+    background-color:#FF7200;;
+  
+     border-bottom: 1rem solid #FF7200; 
 }
 
 
@@ -462,4 +467,53 @@ footer p {
     padding: 10.5px;
     margin: 0px;
     line-height: 100%;
+}
+@import url("jquery-ui.css");
+@import url("../rev-slider/css/settings.css");
+@import url("../rev-slider/css/layers.css");
+@import url("../rev-slider/css/navigation.css");
+/* Go top
+---------------------------------------------------------------*/
+.go-top {
+    position: fixed !important;
+    right: -45px;
+ bottom: 15px;   
+    width: 50px;
+    cursor: pointer;   
+ background-color: #f63440;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;   	
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+     -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+         transition: all 0.3s ease-in-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+       opacity: 0;
+}
+
+.go-top.show {
+ right: 15px;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+ filter: alpha(opacity=100);
+ opacity: 1;
+ visibility: visible;
+ z-index: 99;
+}
+
+.go-top i {
+ font-size: 20px;
+ color: #fff;
+ padding-bottom: 3px;	
+}
+
+.go-top:hover {
+ background-color: #333333;
+}
+
+.go-top:hover i {
+ color: #fff;
 }

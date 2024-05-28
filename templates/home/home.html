@@ -828,7 +828,10 @@
             <!-- end section footer -->
         <!-- ShareThis BEGIN -->
         <div class="sharethis-inline-share-buttons">
-        </div>       
+        </div>      
+        <a class="go-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>  
         <!-- ShareThis END -->
      <script>
      
@@ -902,6 +905,26 @@
     </script>
     <script>
         new WOW().init();
+    </script>
+
+    <script src="{% static 'js/jquery.easing.js' %}"></script> 
+  
+    <script>
+    var goTop = function() {
+      $(window).scroll(function() {
+          if ( $(this).scrollTop() > 800 ) {
+              $('.go-top').addClass('show');
+          } else {
+              $('.go-top').removeClass('show');
+          }
+      }); 
+
+      $('.go-top').on('click', function() {            
+          $("html, body").animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
+          return false;
+      });
+    };
+    goTop();
     </script>
     </body>
 </html>
