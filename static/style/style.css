@@ -480,7 +480,8 @@ footer p {
  bottom: 15px;   
     width: 50px;
     cursor: pointer;   
- background-color: #f63440;
+ /* background-color: #f63440; */
+    background-color: #FF7200;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;

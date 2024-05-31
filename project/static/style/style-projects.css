@@ -68,7 +68,8 @@ transition:  0.5s ease-in-out all;
     border: .5px solid #ddd;
     box-shadow: 20px 0px 20px #0003;
     
-    background-color: #ff7979;
+    background-color: #FF7200;
+    opacity: .8;
     text-align: center;   
     visibility: hidden;
     transition: all 0.5s ease;
